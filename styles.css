@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* Add some padding and background color to the body */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize the button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Style the feature section */
+h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Customize the modal */
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
