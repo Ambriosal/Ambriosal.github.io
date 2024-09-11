@@ -24,7 +24,6 @@ body {
 
 /* Style the feature section */
 h3 {
-    margin-top: 20px;
     color: #333;
 }
 
@@ -32,4 +31,8 @@ h3 {
 .modal-header {
     background-color: #007bff;
     color: white;
+}
+
+#name-div{
+    justify-content:right
 }
