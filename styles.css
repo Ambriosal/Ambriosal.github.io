@@ -1,17 +1,13 @@
 /* styles.css */
-
-/* Add some padding and background color to the body */
 body {
     background-color: #f8f9fa;
     font-family: Arial, sans-serif;
 }
 
-/* Style the navbar */
 .navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Customize the button */
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -22,12 +18,10 @@ body {
     background-color: #0056b3;
 }
 
-/* Style the feature section */
 h3 {
     color: #333;
 }
 
-/* Customize the modal */
 .modal-header {
     background-color: #007bff;
     color: white;
@@ -37,12 +31,12 @@ h3 {
     justify-content:right
 }
 footer {
-    background-color: #f8f9fa; /* Light gray background similar to the navbar */
-    color: #212529; /* Dark gray text to match the page content */
+    background-color: #f8f9fa; 
+    color: #212529; 
 }
 
 .footer-link {
-    color: #007bff; /* Bootstrap primary color for links */
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -51,11 +45,11 @@ footer {
 }
 
 .social-icons a {
-    font-size: 1.5rem; /* Larger icons for better visibility */
+    font-size: 1.5rem; 
 }
 
 .btn-outline-primary {
-    border-color: #007bff; /* Matches primary color */
+    border-color: #007bff; 
     color: #007bff;
 }
 
@@ -65,7 +59,7 @@ footer {
 }
 
 .btn-outline-dark {
-    border-color: #343a40; /* Matches dark color */
+    border-color: #343a40; 
     color: #343a40;
 }
 
