@@ -36,3 +36,40 @@ h3 {
 #name-div{
     justify-content:right
 }
+footer {
+    background-color: #f8f9fa; /* Light gray background similar to the navbar */
+    color: #212529; /* Dark gray text to match the page content */
+}
+
+.footer-link {
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    font-size: 1.5rem; /* Larger icons for better visibility */
+}
+
+.btn-outline-primary {
+    border-color: #007bff; /* Matches primary color */
+    color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-outline-dark {
+    border-color: #343a40; /* Matches dark color */
+    color: #343a40;
+}
+
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: white;
+}
