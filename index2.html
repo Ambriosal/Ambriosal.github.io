@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Osamede Igbinoba – Bold & Bubbly Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        :root {
+            --purple-deep: #441D60;
+            --purple-lavender: #B39DDB;
+            --cream: #FDFBF7;
+            --cream-dark: #F0EBE3;
+            --text-dark: #2E2E2E;
+            --text-muted: #5C5C5C;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, .display-1, .lead {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--purple-deep) !important;
+            padding: 0.8rem 1rem;
+            box-shadow: 0 4px 12px rgba(68, 29, 96, 0.1);
+        }
+        .navbar-brand {
+            color: var(--cream) !important;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+        .navbar-brand:hover {
+            color: var(--purple-lavender) !important;
+        }
+        .navbar-nav .nav-link {
+            color: var(--cream) !important;
+            font-weight: 500;
+            margin-left: 0.5rem;
+            transition: color 0.2s ease;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--purple-lavender) !important;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            text-decoration-thickness: 2px;
+        }
+        .navbar-toggler {
+            border-color: var(--cream);
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(253, 251, 247, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+            padding: 5rem 1rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(179,157,219,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--purple-deep);
+            line-height: 1.1;
+        }
+        .hero .accent-line {
+            width: 80px;
+            height: 4px;
+            background-color: var(--purple-lavender);
+            margin: 1.2rem auto;
+            border-radius: 2px;
+            animation: pulseLine 2s infinite;
+        }
+        @keyframes pulseLine {
+            0% { width: 80px; background-color: var(--purple-lavender); }
+            50% { width: 110px; background-color: #C7B3E5; }
+            100% { width: 80px; background-color: var(--purple-lavender); }
+        }
+        .hero .lead {
+            font-size: 1.4rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        /* Section titles */
+        .section-title {
+            color: var(--purple-deep);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 3px;
+            background: var(--purple-lavender);
+            margin-top: 0.5rem;
+            border-radius: 2px;
+        }
+
+        /* Cards */
+        .card-feature {
+            border: none;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0 10px 25px rgba(68,29,96,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            height: 100%;
+        }
+        .card-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px rgba(68,29,96,0.08);
+        }
+        .card-feature .card-body {
+            padding: 2rem;
+        }
+        .project-placeholder-img {
+            background: linear-gradient(135deg, #441D60 0%, #B39DDB 100%);
+            height: 180px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* Buttons */
+        .btn-primary-custom {
+            background-color: var(--purple-deep);
+            border: none;
+            color: white;
+            padding: 0.75rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary-custom:hover {
+            background-color: #5A2E7A;
+            transform: scale(1.02);
+            color: white;
+        }
+        .btn-outline-custom {
+            border: 2px solid var(--purple-deep);
+            color: var(--purple-deep);
+            border-radius: 50px;
+            padding: 0.7rem 1.8rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-custom:hover {
+            background-color: var(--purple-deep);
+            color: white;
+        }
+
+        /* Blockquote styling */
+        blockquote {
+            border-left: 5px solid var(--purple-lavender);
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin: 1.5rem 0;
+        }
+        blockquote footer {
+            font-style: normal;
+            color: var(--purple-deep);
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        /* Contact */
+        .contact-section {
+            background-color: var(--purple-deep);
+            color: white;
+            border-radius: 30px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+        }
+        .contact-section a {
+            color: var(--purple-lavender);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--cream-dark);
+            border-top: 1px solid rgba(68,29,96,0.1);
+        }
+        footer .btn-floating {
+            border: 1.5px solid var(--purple-deep);
+            color: var(--purple-deep);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0.4rem;
+            transition: all 0.3s ease;
+        }
+        footer .btn-floating:hover {
+            background-color: var(--purple-deep);
+            color: white;
+        }
+
+        /* Responsive typography */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero .lead {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Osamede Igbinoba</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coop.html">Co-op</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container hero-content">
+            <h1 class="display-1">Osamede Igbinoba</h1>
+            <div class="accent-line mx-auto"></div>
+            <p class="lead mt-3">Software Engineering @ UoGuelph</p>
+            <p class="mt-2" style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                <!-- FILL: One bold, short sentence that encapsulates you -->
+                Building with purpose, leading with heart, and always down for a new collaborative adventure.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Me Snippet -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="section-title">About Me</h2>
+                <blockquote>
+                    "I find myself happy with the simple things."
+                    <footer>DMX</footer>
+                </blockquote>
+                <p>
+                    <!-- FILL: Write a short, welcoming paragraph about who you are beyond the code. -->
+                    I’m a third-year Software Engineering student at the University of Guelph, with a deep love for cybersecurity, game development, and project leadership. Outside of tech, you’ll catch me on my skateboard, deep in a yoga flow, or gaming with friends. I’m energized by collaboration, diverse ideas, and turning bold visions into something real.
+                </p>
+                <a href="about.html" class="btn btn-outline-custom mt-2">More About Me</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <!-- Optional: abstract purple decorative shape instead of photo -->
+                <div style="width: 220px; height: 220px; background: linear-gradient(135deg, #B39DDB, #441D60); border-radius: 50%; margin: 0 auto; opacity: 0.15;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Projects (2) -->
+    <div class="container my-5">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6">
+                <div class="card card-feature">
+                    <div class="project-placeholder-img">
+                        <!-- FILL: Replace with <img src="images/project1.jpg" class="img-fluid" style="border-radius: 20px 20px 0 0; width:100%; height:180px; object-fit:cover;"> -->
+                        <i class="fas fa-code"></i> Project 1
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold" style="color: var(--purple-deep);"><!-- FILL: Project name -->CyberSec Toolkit</h4>
+                        <p><!-- FILL: 1-2 sentence description -->A lightweight Python toolkit for automating common penetration testing tasks, built with a focus on usability and extensibility.</p>
+                        <a href="#" class="btn btn-primary-custom"><i class="fas fa-external-link-alt me-2"></i>View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-6">
+                <div class="card card-feature">
+                    <div class="project-placeholder-img">
+                        <!-- FILL: Replace with <img src="images/project2.jpg" ...> -->
+                        <i class="fas fa-gamepad"></i> Project 2
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold" style="color: var(--purple-deep);"><!-- FILL: Project name -->Unity Game Prototype</h4>
+                        <p><!-- FILL: description -->A 2D platformer prototype exploring collaborative level design and dynamic difficulty adjustment, developed in Unity with a small team.</p>
+                        <a href="#" class="btn btn-primary-custom"><i class="fas fa-external-link-alt me-2"></i>View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="projects.html" class="btn btn-outline-custom"><i class="fas fa-arrow-right me-2"></i>All Projects</a>
+        </div>
+    </div>
+
+    <!-- Co-op Teaser -->
+    <div class="container my-5">
+        <h2 class="section-title">Co-op Experience</h2>
+        <div class="card card-feature">
+            <div class="card-body">
+                <blockquote class="mb-3">
+                    "Without labor, nothing prospers."
+                    <footer>Sophocles</footer>
+                </blockquote>
+                <p>
+                    <!-- FILL: You can customize this line or leave as is -->
+                    A snapshot of my co-op journey, where classroom theory meets real-world impact. Dive into the reports and reflections that shaped my professional growth.
+                </p>
+                <a href="coop.html" class="btn btn-primary-custom">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume & Contact Section -->
+    <div class="container my-5">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="contact-section text-center h-100 d-flex flex-column justify-content-center">
+                    <h3 class="fw-bold mb-3">Let’s Connect</h3>
+                    <p>I’m always open to new opportunities, collabs, or just a chat about tech and skateboarding.</p>
+                    <div class="mt-3">
+                        <a href="mailto:<!-- FILL: your.email@example.com -->" class="btn btn-light btn-lg rounded-pill px-4"><i class="fas fa-envelope me-2"></i>Say Hello</a>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/osamede-ig/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Ambriosal" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-feature d-flex flex-column justify-content-center align-items-center text-center p-4 h-100">
+                    <i class="fas fa-file-pdf fa-3x mb-3" style="color: var(--purple-deep);"></i>
+                    <h4 class="fw-bold" style="color: var(--purple-deep);">Resume</h4>
+                    <p>Download my latest resume to see the full picture.</p>
+                    <a href="resume.pdf" class="btn btn-primary-custom mt-2" download>
+                        <i class="fas fa-download me-2"></i>Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <section class="mb-4">
+                <p class="mb-0" style="color: var(--purple-deep); font-weight: 500;">
+                    &copy; 2024 Osamede Igbinoba. All rights reserved.
+                </p>
+            </section>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>

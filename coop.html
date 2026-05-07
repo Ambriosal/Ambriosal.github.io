@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Osamede Igbinoba</title>
+    <title>Co-op | Osamede Igbinoba</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Link to custom CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Osamede Igbinoba</a>
@@ -28,11 +31,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="about.html">About Me</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Co-op</a>
+                        <a class="nav-link active" aria-current="page" href="coop.html">Co-op</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="projects.html">Projects</a>
@@ -42,78 +45,98 @@
         </div>
     </nav>
 
+    <header class="hero" style="padding: 3rem 1rem; margin-bottom: 2rem;">
+        <div class="container text-center">
+            <h1 class="display-3" style="color: var(--purple-deep); font-weight: 700;">Co-op Experience</h1>
+            <p class="lead">My Work Term Reports</p>
+        </div>
+    </header>
 
-    <!-- Main Content-->
-    <!--Work  Cards-->
-    <div class="container my-3">
-        <!-- Text Section -->
-        <div class="row justify-content-center">
-            <div class="text-center">
-                <p class="display-3">Co-op</p>
-                <p class="lead">Work Term Reports</p>
+    <div class="container mb-5">
+        <div class="grid-2x2">
+            
+            <div class="card">
+                <img src="./imgs/rso.png" alt="RSO Logo" style="width: calc(100% + 3rem); height: 200px; object-fit: cover; border-radius: 15px 15px 0 0; margin: -1.5rem -1.5rem 1rem -1.5rem; background-color: white;">
+                
+                <h3>Info Tech Assistant</h3>
+                <h6 style="color: var(--cream-dark); margin-bottom: 1rem; font-weight: 500;">UoGuelph | Research Service Office</h6>
+                
+                <p>My position as an IT Assistant within the IT department of the Research Service Office of UoGuelph.</p>
+                <div class="tags" style="margin-top: auto;">Drupal • HTML • CSS • Adobe Products • Microsoft Suite • PHP</div>
+                
+                <div style="margin: 1rem 0 1.5rem 0;">
+                    <span class="badge rounded-pill" style="background-color: var(--purple-lavender); color: var(--purple-deep);">Very Good</span>
+                    <span class="badge rounded-pill" style="border: 1px solid var(--purple-lavender); color: var(--purple-lavender);">Completed</span>
+                </div>
+                
+                <a href="workterm1.html" class="card-link">Read Report &rarr;</a>
             </div>
+
+            <div class="card">
+                <img src="./imgs/linc.png" alt="Registrar Office Logo" style="width: calc(100% + 3rem); height: 200px; object-fit: cover; border-radius: 15px 15px 0 0; margin: -1.5rem -1.5rem 1rem -1.5rem; background-color: white;">
+                
+                <h3>Systems Administration Assistant</h3>
+                <h6 style="color: var(--cream-dark); margin-bottom: 1rem; font-weight: 500;">UoGuelph | Office of Registrarial Services</h6>
+                
+                <p>My position as a Systems Administration Assistant with the Registrar Office at the University of Guelph.</p>
+                <div class="tags" style="margin-top: auto;">System administration • Networking • Linux • Access • WinSCP • Slate</div>
+                
+                <div style="margin: 1rem 0 1.5rem 0;">
+                    <span class="badge rounded-pill" style="background-color: var(--purple-lavender); color: var(--purple-deep);">Outstanding</span>
+                    <span class="badge rounded-pill" style="border: 1px solid var(--purple-lavender); color: var(--purple-lavender);">Completed</span>
+                </div>
+                
+                <a href="workterm2.html" class="card-link">Read Report &rarr;</a>
+            </div>
+            <div class="card">
+                <div class="project-placeholder-img" style="margin: -1.5rem -1.5rem 1rem -1.5rem; border-radius: 15px 15px 0 0; width: calc(100% + 3rem);">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                
+                <h3>UX Designer - Website Redesign</h3>
+                <h6 style="color: var(--cream-dark); margin-bottom: 1rem; font-weight: 500;"> UoGuelph | Research Office, Website Coordination Committee</h6>
+                
+                <p>First block of my 8-month co-op placement as the technical redesigner for the Research Hub
+                    website of the University of Guelph.</p>
+                <div class="tags" style="margin-top: auto;">Project Management • Proprietary CMS •  Agile • Microsoft Suite • Visio</div>
+                
+                <div style="margin: 1rem 0 1.5rem 0;">
+                    <span class="badge rounded-pill" style="background-color: var(--purple-lavender); color: var(--purple-deep);"> Very Good</span>
+                    <span class="badge rounded-pill" style="border: 1px solid var(--purple-lavender); color: var(--purple-lavender);">Completed</span>
+                </div>
+                
+                <a href="workterm3.html" class="card-link">Read Report &rarr;</a>
+            </div>
+                        <div class="card">
+                <div class="project-placeholder-img" style="margin: -1.5rem -1.5rem 1rem -1.5rem; border-radius: 15px 15px 0 0; width: calc(100% + 3rem);">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                
+                <h3>UX Designer - Website Redesign</h3>
+                <h6 style="color: var(--cream-dark); margin-bottom: 1rem; font-weight: 500;">Company Name | Department | S26</h6>
+                
+                <p>Second block of my 8-month co-op placement as the technical redesigner for the Research Hub
+                    website of the University of Guelph.
+                </p>
+                <div class="tags" style="margin-top: auto;">Project Management • Proprietary CMS •  Agile • Microsoft Suite • Visio</div>
+                
+                <div style="margin: 1rem 0 1.5rem 0;">
+                    <!-- <span class="badge rounded-pill" style="background-color: var(--purple-lavender); color: var(--purple-deep);">TBD</span> -->
+                    <span class="badge rounded-pill" style="border: 1px solid var(--purple-lavender); color: var(--purple-lavender);">In Progress</span>
+                </div>
+                
+                <a href="#" class="card-link">Read Report &rarr;</a>
+            </div>
+
+            
         </div>
 
-        <!-- Card Section -->
-        <div class="row justify-content-start mt-4">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-                <div class="card" style="width: 20rem;">
-                    <img src="./imgs/rso.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Info Tech Assistant</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">UoGuelph | Research Service Office</h6>
-                        <p class="card-text">My position as an IT Assistant within the IT deparment of the Research
-                            Service Office of UoGuelph.</p>
-                        <p style="font-size: 15px;">Drupal, HTML, CSS, Adobe Products, Microsoft Suite, PHP</p>
-                        <a href="workterm1.html" class="btn btn-primary">Learn More</a>
-                        <div style="padding-top:10px">
-                            <span class="badge rounded-pill bg-success"> Very Good</span>
-                            <span class="badge rounded-pill bg-secondary">Completed</span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card" style="width: 20rem; height: 100%;">
-                    <img src="./imgs/linc.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Systems Analyst Assistant</h5>
-                        <h6 class="card-subtitle mb-2 text-muted"> UoGuelph | Office of Registrarial Services</h6>
-                            <p class="card-text">My position as a Systems Analyst Assistant with  the Registrar Office at the University of Guelph.</p>
-                            <p style="font-size: 15px;">System administration, Networking, Linux, Access, WinSCP, Slate</p>
-                            <a href="workterm2.html" class="btn btn-primary">Learn More</a>
-                            <div style="padding-top:10px">
-                            <div>
-                            <span class="badge rounded-pill bg-success">Outstanding</span>
-                            <span class="badge rounded-pill bg-secondary">Completed</span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <!-- <div class="col-md-4">
-                    <div class="card" style="width: 20rem; height: 100%;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                    </div>
-                </div> -->
-        </div>
-    </div>
 
 
     </div>
-    <!-- Footer -->
+
     <footer class="bg-light text-center text-lg-start mt-5">
         <div class="container p-4">
-            <!-- Section: Social Media Links -->
             <section class="mb-4">
                 <div class="d-flex justify-content-center">
                     <a class="btn btn-outline-primary btn-floating m-1" href="https://www.linkedin.com/in/osamede-ig/"
@@ -126,22 +149,16 @@
                     </a>
                 </div>
             </section>
-            <section class="mb-4">
+            <section class="mb-4 text-center">
                 <p class="mb-0">
-                    &copy; 2024 Osamede Igbinoba. All rights reserved.
+                    &copy; 2026 Osamede Igbinoba. All rights reserved.
                 </p>
             </section>
         </div>
     </footer>
-    <!-- Footer -->
 
-    <!-- Font Awesome Icons (for social media icons) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <!-- Bootstrap JS (for interactive components like modals) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
 </body>
-
-
 </html>

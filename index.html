@@ -7,16 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Osamede Igbinoba</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Link to custom CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Osamede Igbinoba</a>
@@ -29,9 +32,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="about.html">About Me</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="coop.html">Co-op</a>
                     </li>
@@ -43,49 +46,45 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container my-3" id="major">
-
-        <!-- Name card -->
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6 text-center" id="name-div">
-                <h1 class="display-1">Osamede Igbinoba</h1>
-                <p class="lead">Software Engineering @ UoGuelph</p>
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-6 text-center" id="name-div">
+                    <h1 class="display-1">Osamede Igbinoba</h1>
+                    <div class="accent-line mx-auto"></div>
+                    <p class="lead">Software Engineering @ UoGuelph</p>
+                </div>
             </div>
         </div>
+    </header>
 
-        <!-- Main Row -->
-        <div class="row mt-5">
+    <div class="container" id="major">
+
+        <section id="about">
             <div class="row">
-                <!-- First Nested Column -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
                     <h2>About Me</h2>
                     <blockquote class="blockquote">
                         <p>"I find myself happy with the simple things."</p>
                         <footer class="blockquote-footer">
                             <cite title="Source Title">DMX</cite>
                         </footer>
-                    </blockquote> <a href="about.html">
-                        <!-- <button class="btn btn-outline-primary">Learn More!</button> -->
-                    </a>
+                    </blockquote>
                 </div>
-                <!-- Second Nested Column -->
                 <div id="text-div" class="col-12 col-md-6">
                     <p>
-                        I am a third-year student at the University of Guelph with a passion for cybersecurity, game development and
-                        project management. This site serves as a platform to showcase my personality, projects, and
-                        career journey.
-                        When I'm not diving into tech, you'll find me skating, practicing yoga, or gaming. I recently started playing volleyball!
+                        I am a fifth-year student at the University of Guelph with a passion for computing ethics, and project management. 
+                        This site serves as a platform to showcase my personality, projects, and
+                        career journey. If and when I'm not at my desk, you'll find me learning to watercolour, trying to balance in yoga or planning my next trip.
+                        I recently visited Montreal for the first time!
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row mt-5">
-            <!-- Nested Row within the Super Column -->
+        <section id="coop">
             <div class="row">
-                <!-- First Nested Column -->
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4 mb-md-0">
                     <h2>Co-op</h2>
                     <blockquote class="blockquote">
                         <p>"Without labor, nothing prospers"</p>
@@ -93,82 +92,71 @@
                             <cite title="Source Title">Sophocles</cite>
                         </footer>
                     </blockquote>
-                    <a href="coop.html">
-                        <button class="btn btn-outline-primary">Learn More!</button>
+                    <a href="coop.html" class="btn btn-primary-custom">
+                        See The Rest!
                     </a>
                 </div>
-                <!-- Second Nested Column -->
-                <div id="text-div" class="col-md-6">
-                    <p>
-                        This section showcases all of the co-op positions throughout my degree.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <!-- Nested Row within the Super Column -->
-            <div class="row">
-                <!-- First Nested Column -->
+                
                 <div class="col-md-6">
-                    <h2>Projects</h2>
-                    <blockquote class="blockquote">
-                        <p>"Creativity is seeing what others see and thinking what no one else ever thought."</p>
-                        <footer class="blockquote-footer">
-                            <cite title="Source Title">Albert Einstein</cite>
-                        </footer>
-                        <!-- </blockquote> <a href="projects.html"> -->
-                        <button class="btn btn-secondary">Under Construction</button>
-                        </a>
-                </div>
-                <!-- Second Nested Column -->
-                <div id="text-div" class="col-md-6">
-                    <p>
-                        This section showcases all of my projects and highlights my recents and personal favourites. See
-                        more to get a glimpse of what I'm working on!
-                    </p>
+                    <h3>UX Designer - Website Redesign</h3>
+                    <div class="tags">Winter 2026</div>
+                    <p>Provided the technical support for the Website Coordination Committee at the Office of Research for the University of Guelph.</p>
+                    <a href="workterm3.html" class="btn btn-outline-custom">Read Recent Work Term Report</a>
                 </div>
             </div>
+        </section>
+
+        <section id="projects">
+            <h2>Recent Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Lineage</h3>
+                    <div class="tags">React • TypeScript • Supabase • Neo4j</div>
+                    <p>[A full-stack web application designed for interactive family tree visualization, focusing on clean system design and robust backend integration.]</p>
+                    <a href="#" class="card-link">View Project &rarr;</a>
+                </div>
+                
+                <div class="card">
+                    <h3>RE:Connect</h3>
+                    <div class="tags">Android • Jetpack Compose • Room</div>
+                    <p>[A mobile application designed to help users track and maintain meaningful social relationships with an intuitive, modern UI.]</p>
+                    <a href="#" class="card-link">View Project &rarr;</a>
+                </div>
+                
+                <div class="card">
+                    <h3>EduGis</h3>
+                    <div class="tags">Data Visualization</div>
+                    <p>[A collaborative data-driven mapping project visualizing educational facilities across Canada.]</p>
+                    <a href="#" class="card-link">View Project &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4">
+            <section class="mb-4">
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-outline-primary btn-floating m-1" href="https://www.linkedin.com/in/osamede-ig/"
+                        role="button" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/Ambriosal" role="button"
+                        target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <p class="mb-0 text-center">
+                    &copy; 2026 Osamede Igbinoba. All rights reserved.
+                </p>
+            </section>
         </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer class="bg-light text-center text-lg-start mt-5">
-            <div class="container p-4">
-                <!-- Section: Social Media Links -->
-                <section class="mb-4">
-                    <div class="d-flex justify-content-center">
-                        <a class="btn btn-outline-primary btn-floating m-1"
-                            href="https://www.linkedin.com/in/osamede-ig/" role="button" target="_blank"
-                            aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/Ambriosal"
-                            role="button" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </section>
-                <!-- Section: Social Media Links -->
-
-                <!-- Section: Text -->
-                <section class="mb-4">
-                    <p class="mb-0">
-                        &copy; 2024 Osamede Igbinoba. All rights reserved.
-                    </p>
-                </section>
-                <!-- Section: Text -->
-            </div>
-        </footer>
-        <!-- Footer -->
-
-
-        <!-- Font Awesome Icons (for social media icons) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-        <!-- Bootstrap JS (for interactive components like modals) -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Link to custom JS file -->
-        <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
